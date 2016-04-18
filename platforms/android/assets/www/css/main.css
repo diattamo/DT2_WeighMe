@@ -1,0 +1,123 @@
+@import "palette.css";
+
+body {
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.welcome-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.header-text-thin {
+  font-weight: 100;
+}
+
+.header-text-bold {
+  font-weight: bolder;
+  margin-left: -10px;
+}
+
+.spartan-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spartan-logo-image{
+  height: 75%;
+  width: 75%;
+}
+
+.welcome-body {
+  width: 70%;
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.body-thin {
+  font-weight: 100;
+}
+
+.body-bold {
+  font-weight: bolder;
+  margin-left: -5px;
+}
+
+.start-button-container {
+  color: #FFFFFF;
+  background-color: #512DA8;
+  margin-top: 15px;
+  height: 6vh;
+  line-height: 6vh;
+  width: 155px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.start-button {
+  border: none;
+  background: none;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.start-button-container:hover{
+  background-color: #673ab7;
+}
+
+.enter-name-form {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+.input-text-container {
+  padding-top: 5px;
+  padding: 0 0 0 10px;
+  border: 1px solid #E6E6E6;
+  border-radius: 2px;
+  width: 100%;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .navigation,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

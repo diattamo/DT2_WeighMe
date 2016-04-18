@@ -1,0 +1,33 @@
+@import "palette.css";
+
+.navigation-container {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    flex-grow: 1;
+    padding-top: 9px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+
+i {
+    padding-top: 5px;
+}
+
+.nav-button:hover {
+    background-color: #673AB7;
+}
+
+.nav-button:active {
+    background-color: #673AB7;
+}

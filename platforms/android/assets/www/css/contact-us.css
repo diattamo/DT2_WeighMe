@@ -1,0 +1,61 @@
+@import "palette.css";
+
+body {
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-us-container, .feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.contact-us-header {
+  font-size: 30px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.text-bold {
+  font-weight: bolder;
+  margin-left: -5px;
+}
+
+.contact-us-body {
+  font-size: 22px;
+  padding: 15px 0 15px 0;
+}
+
+.contact-us-prompt {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.get-in-touch-button {
+  background-color: #512DA8;
+  border: none;
+  margin-top: 15px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.get-in-touch-button:hover, .get-in-touch-button:active{
+  background-color: #673AB7;
+}
+
+.get-in-touch-button:hover, .get-in-touch-button:active{
+  background-color: #673AB7;
+}
+
+.message-box {
+  border-radius: 4px;
+  border: 1px solid #673AB7;
+}

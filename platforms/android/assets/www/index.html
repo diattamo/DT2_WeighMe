@@ -5,18 +5,52 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/weigh-me.css">
+        <link rel="stylesheet" href="css/settings.css">
+        <link rel="stylesheet" href="css/contact-us.css">
+        <link rel="stylesheet" href="css/dashboard.css">
         <title>WeighMe App</title>
     </head>
     <body>
-        <h1>WeighME!</h1>
-        <div id="counter">...</div>
-        <div id="statusDiv"></div>
-        <div style="margin: 10px">
-            <button style="margin: 10px, text-size=5em" id="Measure">Arduino</button>
-            <button style="margin: 10px, text-size=5em" id="reconnect">Reconnect</button>
+        <div class="header-container">
+            <span class="header-text-thin">weigh</span>
+            <span class="header-text-bold">ME</span>
         </div>
+        <div class="weigh-button-body">
+            <div id="counter"></div>
+            <div id="statusDiv"></div>
+            <div class="weigh-me-button-container">
+                <button class="weigh-me-button" id="Measure">
+                    <span class="weigh-me-text-thin">weigh</span>
+                    <span class="weigh-me-text-bold">ME</span>
+                </button>
+            </div>
+        </div>
+
         <div id="tempDiv"></div>
 
+        <div class="accent-color navigation-container">
+            <button class="nav-button text-primary-color">
+                <i class="fa fa-balance-scale"></i>
+                <span>Weigh me</span>
+            </button>
+            <button class="nav-button text-primary-color">
+                <i class="fa fa-line-chart"></i>
+                <span>Dashboard</span>
+            </button>
+            <button class="nav-button text-primary-color">
+                <i class="fa fa-cog"></i>
+                <span>Settings</span>
+            </button>
+            <button class="nav-button text-primary-color">
+                <i class="fa fa-question-circle"></i>
+                <span>Contact us</span>
+            </button>
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

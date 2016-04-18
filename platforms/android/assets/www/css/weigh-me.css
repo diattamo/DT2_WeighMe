@@ -1,0 +1,63 @@
+.weigh-me-body-container {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header-text {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    width: 80%;
+}
+
+.weigh-me-button {
+    background-color: #512DA8;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+.weigh-me-scale {
+    font-size: 250px;
+}
+
+.weigh-me-slogan {
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.weigh-me-text-thin {
+    font-weight: 100;
+}
+
+.weigh-me-text-bold {
+    font-weight: bolder;
+    margin-left: -3px;
+}
+
+.weigh-me-button-container {
+    color: #FFFFFF;
+    background-color: #512DA8;
+    height: 6vh;
+    line-height: 6vh;
+    width: 155px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+.weigh-me-button {
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.weigh-me-button-container:hover{
+    background-color: #673ab7;
+}
