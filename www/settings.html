@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/weigh-me.css">
+        <link rel="stylesheet" href="css/settings.css">
+        <link rel="stylesheet" href="css/contact-us.css">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <title>WeighMe App</title>
+    </head>
+    <body>
+        <div class="header-container">
+            <span class="header-text-thin">weigh</span>
+            <span class="header-text-bold">ME</span>
+        </div>
+        <div class="settings-container">
+            <div class="settings-button-container">
+                <button class="settings-button">
+                    <i class="change-icon fa fa-user"></i>
+                    <span>Personal Information</span>
+                    <i class="proceed-arrow fa fa-arrow-circle-right"></i>
+                </button>
+                <button class="settings-button">
+                    <i class="change-icon fa fa-balance-scale"></i>
+                    <span>Change Unit</span>
+                    <i class="proceed-arrow fa fa-arrow-circle-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!--<div class="settings-change-container" ng-show="showChangeInfo">-->
+            <!--<form class="change-info-form">-->
+                <!--<div class="input-group-addonheader-text">-->
+                    <!--<span class="header-text-thin">{{constants.SETTINGS.ENTERNEWNAME}}</span>-->
+                <!--</div>-->
+                <!--<div class="input-text-container">-->
+                    <!--<input class="input-text-field" type="text" ng-model="userName"/>-->
+                <!--</div>-->
+                <!--<div class="options-container">-->
+                    <!--<button class="settings-action-button" ng-click="saveNewName()">-->
+                        <!--<span>{{constants.SETTINGS.SAVE}}</span>-->
+                    <!--</button>-->
+                    <!--<button class="settings-action-button" ng-click="cancel()">-->
+                        <!--<span>{{constants.SETTINGS.CANCEL}}</span>-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+
+        <!--<div class="settings-change-container" ng-show="showChangeUnit">-->
+            <!--<form class="change-info-form">-->
+                <!--<div class="input-group-addonheader-text">-->
+                    <!--<div>-->
+                        <!--<span class="header-text-thin">{{constants.SETTINGS.CHANGEUNIT}}</span>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span class="header-text-thin">{{constants.SETTINGS.CURRENTUNIT}}</span>-->
+                        <!--<span class="header-text-bold">{{currentUnit}}</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="options-container">-->
+                    <!--<button class="weight-button" ng-click="updateCurrentUnit('kg')">-->
+                        <!--<span>{{constants.SETTINGS.KG}}</span>-->
+                    <!--</button>-->
+                    <!--<button class="weight-button" ng-click="updateCurrentUnit('lb')">-->
+                        <!--<span>{{constants.SETTINGS.LB}}</span>-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+        <div class="accent-color navigation-container">
+            <button class="nav-button text-primary-color">
+                <a href="index.html"><i class="fa fa-balance-scale"></i>
+                <span>Weigh me</span></a>
+            </button>
+            <button class="nav-button text-primary-color">
+                <a href="dashboard.html"><i class="fa fa-line-chart"></i>
+                <span>Dashboard</span></a>
+            </button>
+            <button class="nav-button text-primary-color is-active">
+                <a href="settings.html"><i class="fa fa-cog"></i>
+                <span>Settings</span></a>
+            </button>
+            <button class="nav-button text-primary-color">
+                <a href="contact.html"><i class="fa fa-question-circle"></i>
+                <span>Contact us</span></a>
+            </button>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

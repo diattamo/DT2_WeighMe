@@ -65,7 +65,3 @@ body {
   background-color: #e6e6e6;
   border: 1px solid #673AB7;
 }
-
-.weight-button:active, .weight-button:hover{
-  background-color: #B3B3B3;
-}
