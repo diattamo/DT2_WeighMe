@@ -20,26 +20,30 @@
             <span class="header-text-thin">weigh</span>
             <span class="header-text-bold">ME</span>
         </div>
-        <div class="weigh-me-body-container">
-            <div class="weigh-me-prompt">
-                <span>Click the button below to get an instant weight reading</span>
-            </div>
-            <div id="counter"></div>
-            <div id="statusDiv"></div>
 
-            <button class="weigh-me-button" id="Measure">
-                <span class="weigh-me-text-thin">weigh</span>
-                <span class="weigh-me-text-bold">ME</span>
-            </button>
-
-            <div id="tempDiv"></div>
-            <div class="weigh-me-slogan">
-                <span>A healthier life at your tiptoes</span>
-            </div>
+        <div class="settings-change-container">
+            <form class="change-info-form">
+                <div class="input-group-addonheader-text">
+                    <div class="change-unit-header">
+                        <span class="header-text-thin">Change Unit</span>
+                    </div>
+                    <div class="header-text-body">
+                        <span class="header-text-thin">Current Unit: </span>
+                        <span class="header-text-bold" id="current-unit"></span>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="weight-button" id="kg-button">
+                        <span>KG</span>
+                    </button>
+                    <button class="weight-button" id="lb-button">
+                        <span>LB</span>
+                    </button>
+                </div>
+            </form>
         </div>
-
         <div class="accent-color navigation-container">
-            <button class="nav-button text-primary-color is-active">
+            <button class="nav-button text-primary-color">
                 <a href="index.html"><i class="fa fa-balance-scale"></i>
                 <span>Weigh me</span></a>
             </button>
@@ -47,7 +51,7 @@
                 <a href="dashboard.html"><i class="fa fa-line-chart"></i>
                 <span>Dashboard</span></a>
             </button>
-            <button class="nav-button text-primary-color">
+            <button class="nav-button text-primary-color is-active">
                 <a href="settings.html"><i class="fa fa-cog"></i>
                 <span>Settings</span></a>
             </button>
@@ -60,7 +64,7 @@
         <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+            app.initializeSettings();
         </script>
     </body>
 </html>

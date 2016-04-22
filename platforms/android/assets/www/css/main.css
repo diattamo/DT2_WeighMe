@@ -83,6 +83,9 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.start-button-container:hover{
+  background-color: #673ab7;
+}
 
 .enter-name-form {
   height: 65vh;
