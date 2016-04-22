@@ -18,32 +18,41 @@ var app = {
     },
 
     connect1: function() {
+        console.log("connecting to bluetooth 1");
+
         var onConnect = function() {
                 // subscribe for incoming data
-                console.log("connected to bluetooth");
                 bluetoothSerial.subscribe("\n", app.onMessage1, app.subscribeFailed); 
-                // statusDiv.innerHTML="Connected to " + macAddress + ".";  
                 bluetoothSerial.write("1");
-
             };
 
-        bluetoothSerial.connect(macAddress, onConnect, app.onDisconnect);
-
-        // then send 1
+        bluetoothSerial.connect(macAddress, onConnect, app.onFailconnect);
 
     },
+    connect2: function() {
+        console.log("connecting to bluetooth 2");
 
-    sendToArduino: function(c) {
-        bluetoothSerial.write(c);
+        var onConnect = function() {
+                // subscribe for incoming data
+                bluetoothSerial.subscribe("\n", app.onMessage2, app.subscribeFailed); 
+                bluetoothSerial.write("1");
+            };
+
+        bluetoothSerial.connect(macAddress, onConnect, app.onFailconnect);
     },
-    onDisconnect: function() {
-        // alert("Disconnected");
-        // statusDiv.innerHTML="Disconnected.";
+    onFailconnect: function() {
         console.log("connection failed");
     },
     onMessage1: function(data) {
         console.log("reading 1");
         counter.innerHTML = data;
+        bluetoothSerial.disconnect(app.connect2, app.failDisc);
+
+
+    },
+    onMessage2: function(data) {
+        console.log("reading 2");
+        counter.innerHTML = "data";
         bluetoothSerial.disconnect(app.successDisc, app.failDisc);
     },
     subscribeFailed: function() {
