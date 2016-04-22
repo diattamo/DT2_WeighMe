@@ -20,61 +20,28 @@
             <span class="header-text-thin">weigh</span>
             <span class="header-text-bold">ME</span>
         </div>
-        <div class="settings-container">
-            <div class="settings-button-container">
-                <button class="settings-button">
-                    <i class="change-icon fa fa-user"></i>
-                    <span>Personal Information</span>
-                    <i class="proceed-arrow fa fa-arrow-circle-right"></i>
-                </button>
-                <button class="settings-button">
-                    <i class="change-icon fa fa-balance-scale"></i>
-                    <span>Change Unit</span>
-                    <i class="proceed-arrow fa fa-arrow-circle-right"></i>
-                </button>
-            </div>
+
+        <div class="settings-change-container">
+            <form class="change-info-form">
+                <div class="input-group-addonheader-text">
+                    <div class="change-unit-header">
+                        <span class="header-text-thin">Change Unit</span>
+                    </div>
+                    <div class="header-text-body">
+                        <span class="header-text-thin">Current Unit: </span>
+                        <span class="header-text-bold" id="current-unit"></span>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="weight-button" id="kg-button">
+                        <span>KG</span>
+                    </button>
+                    <button class="weight-button" id="lb-button">
+                        <span>LB</span>
+                    </button>
+                </div>
+            </form>
         </div>
-
-        <!--<div class="settings-change-container" ng-show="showChangeInfo">-->
-            <!--<form class="change-info-form">-->
-                <!--<div class="input-group-addonheader-text">-->
-                    <!--<span class="header-text-thin">{{constants.SETTINGS.ENTERNEWNAME}}</span>-->
-                <!--</div>-->
-                <!--<div class="input-text-container">-->
-                    <!--<input class="input-text-field" type="text" ng-model="userName"/>-->
-                <!--</div>-->
-                <!--<div class="options-container">-->
-                    <!--<button class="settings-action-button" ng-click="saveNewName()">-->
-                        <!--<span>{{constants.SETTINGS.SAVE}}</span>-->
-                    <!--</button>-->
-                    <!--<button class="settings-action-button" ng-click="cancel()">-->
-                        <!--<span>{{constants.SETTINGS.CANCEL}}</span>-->
-                    <!--</button>-->
-                <!--</div>-->
-            <!--</form>-->
-        <!--</div>-->
-
-        <!--<div class="settings-change-container" ng-show="showChangeUnit">-->
-            <!--<form class="change-info-form">-->
-                <!--<div class="input-group-addonheader-text">-->
-                    <!--<div>-->
-                        <!--<span class="header-text-thin">{{constants.SETTINGS.CHANGEUNIT}}</span>-->
-                    <!--</div>-->
-                    <!--<div>-->
-                        <!--<span class="header-text-thin">{{constants.SETTINGS.CURRENTUNIT}}</span>-->
-                        <!--<span class="header-text-bold">{{currentUnit}}</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="options-container">-->
-                    <!--<button class="weight-button" ng-click="updateCurrentUnit('kg')">-->
-                        <!--<span>{{constants.SETTINGS.KG}}</span>-->
-                    <!--</button>-->
-                    <!--<button class="weight-button" ng-click="updateCurrentUnit('lb')">-->
-                        <!--<span>{{constants.SETTINGS.LB}}</span>-->
-                    <!--</button>-->
-                <!--</div>-->
-            <!--</form>-->
-        <!--</div>-->
         <div class="accent-color navigation-container">
             <button class="nav-button text-primary-color">
                 <a href="index.html"><i class="fa fa-balance-scale"></i>
@@ -94,9 +61,10 @@
             </button>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+            app.initializeSettings();
         </script>
     </body>
 </html>

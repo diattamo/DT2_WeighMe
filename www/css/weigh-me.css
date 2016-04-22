@@ -19,10 +19,11 @@
 }
 
 .weigh-me-prompt {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    padding-top: 10px;
+    margin-bottom: 25px;
     width: 75%;
+    font-size: 25px;
 }
 
 .weigh-me-slogan {
@@ -32,11 +33,13 @@
 
 .weigh-me-text-thin {
     font-weight: 100;
+    font-size: 15px;
 }
 
 .weigh-me-text-bold {
     font-weight: bolder;
     margin-left: -3px;
+    font-size: 15px;
 }
 
 .weigh-me-button {

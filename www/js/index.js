@@ -4,6 +4,10 @@ var macAddress2 = "20:16:01:20:55:22";
 var app = {
     initialize: function() {
         this.bindEvents();
+        localStorage.currentUnit = JSON.stringify("kg");
+    },
+    initializeSettings: function() {
+        document.getElementById("current-unit").innerHTML = JSON.parse(localStorage.currentUnit);
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -13,7 +17,6 @@ var app = {
         Measure.ontouchstart = app.test;
     },
     test: function(event) {
-//        tempDiv.innerHTML="Wazzzzaaaaa";
         bluetoothSerial.write("1");
     },
     onConnect: function() {
@@ -34,3 +37,18 @@ var app = {
         alert("subscribe failed");
     }
 };
+
+$(document).ready(function(){
+    $("#kg-button").on("click",function() {
+        localStorage.currentUnit = JSON.stringify("kg");
+        document.getElementById("current-unit").innerHTML = "kg";
+        return false;
+    });
+
+    $("#lb-button").on("click",function() {
+        localStorage.currentUnit = JSON.stringify("lb");
+        document.getElementById("current-unit").innerHTML = "lb";
+        return false;
+    });
+});
+
